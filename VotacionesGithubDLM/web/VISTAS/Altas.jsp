@@ -22,7 +22,7 @@
             <%
             } else if (sesaltas == 2) {
             %>
-            <h1>El votante ya existe</h1>
+            <h1>Votante ya existente</h1>
             <%
             } else {
             %>
