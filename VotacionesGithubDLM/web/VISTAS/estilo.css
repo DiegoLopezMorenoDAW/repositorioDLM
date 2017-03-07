@@ -1,0 +1,198 @@
+body{
+    margin: 0 auto;
+}
+
+#contenedor{
+    text-align: center;
+}
+
+h1{
+    font: oblique bold 120% serif;
+    font-size: 40px;
+}
+
+#form1 label {
+    display: inline-block;
+    width: 150px;
+}
+
+#form1 input {
+    display: inline-block;
+    width: 150px;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+#texto label{
+    font-size: 20px;
+}
+
+#texto input
+{
+    border: 1px solid #DBE1EB;
+    font-size: 18px;
+    font-family: Arial, Verdana;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -o-border-radius: 4px;
+    background: #FFFFFF;
+    background: linear-gradient(left, #FFFFFF, #F7F9FA);
+    background: -moz-linear-gradient(left, #FFFFFF, #F7F9FA);
+    background: -webkit-linear-gradient(left, #FFFFFF, #F7F9FA);
+    background: -o-linear-gradient(left, #FFFFFF, #F7F9FA);
+    color: #2E3133;
+}
+
+#texto input:focus
+{
+    color: #2E3133;
+    border-color: #FBFFAD;
+}
+
+#escrutinio{
+    display: inline-block;
+    width: 200px;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+#form2 label {
+    display: inline-block;
+    width: 150px;
+}
+
+#form2 input {
+    display: inline-block;
+    width: 150px;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+input[name^="opcion"]{
+    border: 1px solid #DBE1EB;
+    font-size: 18px;
+    font-family: Arial, Verdana;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -o-border-radius: 4px;
+    background: #4972B5;
+    background: linear-gradient(left, #4972B5, #618ACB);
+    background: -moz-linear-gradient(left, #4972B5, #618ACB);
+    background: -webkit-linear-gradient(left, #4972B5, #618ACB);
+    background: -o-linear-gradient(left, #4972B5, #618ACB);
+}
+
+input[name^="opcion"]:hover{
+    background: #365D9D;
+    background: linear-gradient(left, #365D9D, #436CAD);
+    background: -moz-linear-gradient(left, #365D9D, #436CAD);
+    background: -webkit-linear-gradient(left, #365D9D, #436CAD);
+    background: -o-linear-gradient(left, #365D9D, #436CAD);
+    color: #FFFFFF;
+    border-color: #FBFFAD;
+}
+
+#volver{
+    border: 1px solid #DBE1EB;
+    font-size: 18px;
+    font-family: Arial, Verdana;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -o-border-radius: 4px;
+    background: #4972B5;
+    background: linear-gradient(left, #4972B5, #618ACB);
+    background: -moz-linear-gradient(left, #4972B5, #618ACB);
+    background: -webkit-linear-gradient(left, #4972B5, #618ACB);
+    background: -o-linear-gradient(left, #4972B5, #618ACB);
+}
+
+#volver:hover{
+    background: #365D9D;
+    background: linear-gradient(left, #365D9D, #436CAD);
+    background: -moz-linear-gradient(left, #365D9D, #436CAD);
+    background: -webkit-linear-gradient(left, #365D9D, #436CAD);
+    background: -o-linear-gradient(left, #365D9D, #436CAD);
+    color: #FFFFFF;
+    border-color: #FBFFAD;
+}
+
+table {
+    margin: 20px auto;
+    border:1px black solid;
+    border-radius:5px;
+    min-width:400px;
+    font-family: Helvetica,Arial;
+}
+
+table td {
+    padding:6px;
+}
+
+/*Primera fila, primera celda*/
+table tr:first-child td:first-child {
+    border-radius:5px 0px 0px 0px;
+}
+
+/*Primera fila, última celda*/
+table tr:first-child td:last-child {
+    border-radius:0px 5px 0px 0px;
+}
+
+/*Última fila, primera celda*/
+table tr:last-child td:first-child {
+    border-radius:0px 0px 0px 5px;
+}
+
+/*Última fila, última celda*/
+table tr:last-child td:last-child {
+    border-radius:0px 0px 5px 0px;
+}
+
+table td:not(:last-child) {
+    border-right:1px #666 solid;
+}
+
+
+table tr:nth-child(2n) {
+    background: #87CEEB;
+}
+
+table tr:nth-child(2n+1){
+    background: #ADD8E6;
+}
+
+table.header tr:not(:first-child):hover, table:not(.header) tr:hover {
+    background:#E0FFFF;
+}
+
+table:not(.header) tr {
+    text-align: center;
+}
+
+/*Primera fila*/
+table.header tr:first-child {
+    font-weight: bold;
+    color:#fff;
+    background-color: #444;
+    border-bottom:1px #000 solid;
+}
+
+/*Todas las filas a partir de la segunda*/
+table.header tr:nth-child(n+2) {
+    text-align: right;
+}
